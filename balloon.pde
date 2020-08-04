@@ -1,3 +1,6 @@
+ // korrawee somyos
+ // 04/08/20
+ // create stand still balloon
  void draw(){
    
    showBalloon(10,10,10,10);
