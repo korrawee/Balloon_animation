@@ -3,10 +3,14 @@
  // balloon can move
  int speedx = 1;
  int speedy = 1;
- int x = 10;
- int y = 10;
- int Bw = 10;
- int Bh = 10;
+ int x = 100;
+ int y = 100;
+ int Bw = 50;
+ int Bh = 50;
+ void setup(){
+  size(600,650); 
+   
+ }
  void draw(){
    
    background(255); /*set background color to white*/
@@ -19,10 +23,10 @@
     if(y < Bh/2 || y > height-Bh/2){ /*y_axis bouncing area*/
      speedy = -speedy;         /*change speedy's direction to force balloon go the opposite direction*/
     }
-    
+   int lWidth = 30;
    int Lpos_x = x;
    int Lpos_y = y+ (Bh/2);
-   int Lpos_y2 = Lpos_y + 10;
+   int Lpos_y2 = Lpos_y + lWidth;
    
    fill(220); /*balloon's color*/
    ellipse(x, y, Bw, Bh); /*position and balloon's size*/
